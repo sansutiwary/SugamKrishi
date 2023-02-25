@@ -1,0 +1,116 @@
+body{
+    background-color:rgb(255, 255, 255) ;
+   background-image: url(dfgh.jpg);
+    background-repeat: no-repeat;
+   
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    color: azure;
+    height: 65px;
+    background-color: green;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 27px;
+}
+.logo img{
+    height: 65px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: auto;
+    background-color: green;
+    border-radius: 6px;
+    opacity: 0.8;
+    width: 30%;
+    margin-left: 60vh ;
+    margin-top: 10vh;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    height: 30vh;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+
+}
+.login{
+  transition-duration: 0.4s;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+   background-color: rgb(114, 224, 141);
+}
+
+.login:hover {
+  background-color: #099915; 
+  color: rgb(254, 254, 255);
+}
+.Register{
+  transition-duration: 0.4s;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: rgb(114, 224, 141);
+  color: #06220f;
+}
+
+.Register:hover {
+  background-color: #099915; 
+  color: rgb(255, 255, 255);
+}
+.name{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.Moblienumber{
+    margin-top: 15px;
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+.button{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    
+}
+
+.Home{
+    cursor: pointer;
+}
+.Soil{
+    cursor: pointer;
+}
+.equepments{
+    cursor: pointer;
+}
+.Chat{
+    cursor: pointer;
+}
+
+

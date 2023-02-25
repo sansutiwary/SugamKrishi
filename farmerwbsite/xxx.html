@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sugam Krisi News</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+      
+      table {
+        border-collapse:unset;
+        width: 70%;
+        vertical-align: middle;
+        
+      }
+      th, td {
+        padding: 16px;
+        
+        border-bottom: 1px solid #9bcda2;
+        text-align: center;
+        align-items: center;
+      }
+
+      tr {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+      
+      tr:hover {box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);}
+
+	  table, th, td {
+        border: 1px solid;
+        vertical-align: middle; 
+       }
+		
+
+	 .logo{
+      vertical-align: middle;      
+	}  
+
+    </style>
+  </head>
+  <body>
+	<div id="examp">
+	<li class="logo"><img src="sugam-krishi-logo.png" width="20%" 
+    height="15%"></li>
+    <h1>SUGAM KRISI NEWS</h1>
+    <table id="newsTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+    <script src="news_data.js"></script>
+	</div>
+  </body>
+</html>

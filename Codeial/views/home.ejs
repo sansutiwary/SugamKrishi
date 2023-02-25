@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/home.css" />
+<% if(locals.user){ %>
+  <section id="post">
+    <form action="/posts/create" method="post" id="post-create">
+      <!-- <input type="file" name="post_pics" id="post_pics"> -->
+      <textarea id="content" name="content" cols="30" rows="3" placeholder="Share Your thoughts..." required></textarea>
+      <input type="submit" value="POST" />
+    </form>
+  </section>
+  <% } else{ %>
+    <h1>Please <a href="/user/signin">Login</a> to Post here !</h1>
+    <% } %>
+      <% if(locals.user){ %>
+        <section id="all-tools">
+          <h2>Tools</h2>
+          <a href="http://127.0.0.1:5500/wether%20app/index.html" target="popup" onclick="window.open('http://127.0.0.1:5500/wether%20app/index.html','popup','width=600,height=600'); return false;">
+    Weather Info</a> <br>
+          <a href="http://127.0.0.1:5500/farmerwbsite/xxx.html" target="popup" onclick="window.open('http://127.0.0.1:5500/farmerwbsite/xxx.html','popup','width=600,height=600'); return false;">
+            Government news And Schemes</a> <br>
+            <a href="http://127.0.0.1:8080/" target="popup" onclick="window.open('http://127.0.0.1:8080/','popup','width=600,height=600'); return false;">
+              Crop Recommendation</a> <br>
+            <a href="http://127.0.0.1:5000/" target="popup" onclick="window.open('http://127.0.0.1:5000/','popup','width=600,height=600'); return false;">
+                Cattle Recommendation</a> <br>
+            <a href="http://127.0.0.1:7000/" target="popup" onclick="window.open('http://127.0.0.1:7000/','popup','width=600,height=600'); return false;">
+                Voice Help</a> <br>
+          <!-- <a href="/">Groups</a><br />
+          <a href="/">Insights</a><br /> -->
+        </section>
+        <%}%>
+
+          <section id="all-posts-section">
+            <% for(post of posts) { %> 
+              <%- include('_post') -%>
+            <% } %>
+          </section>
+
+          <% if(locals.user){ %>
+            <section id="user-friends">
+              <h3>Active Users</h3>
+              <% for(u of locals.all_users){ %>
+                <% if(u.id==user.id){ %>
+                  <!-- do nothing -->
+                  <% }else{ %>
+                    <p>
+                      <a href="/user/profile/<%=u.id%>">
+                        <%= u.name %>
+                      </a>
+                    </p>
+                    <%}%>
+                      <%}%>
+            </section>
+            <%}%>
+
+<script src="/JS/home_posts.js"></script>
+<script src="/JS/home_comm.js"></script>

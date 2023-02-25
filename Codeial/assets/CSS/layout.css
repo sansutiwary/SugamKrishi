@@ -1,0 +1,25 @@
+html {
+  background: url("https://c1.wallpaperflare.com/preview/544/534/376/background-green-grass-lawn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header, footer {
+  background-color: #8abe53;
+  height: 10vh; }
+  header ul, footer ul {
+    color: black; }
+
+body {
+  margin: 0;
+  text-align: center; }
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0px; }
+  header #current_user {
+    margin: 3px 5px;
+    padding: 4px;
+    background-color: cornflowerblue; }
+  header a {
+    margin: 0 20px; }

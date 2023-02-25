@@ -1,0 +1,35 @@
+header{
+    ul{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+        li{
+            margin-top: 5px;
+            display: inline-block;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    img{
+        width: 13vw;
+        height: 7.6vh
+    }
+}
+
+// #Webname{
+//     background: url('');
+// }
+
+#username{
+    font-weight: 700;
+    text-decoration: overline;
+}
+
+#name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    position: absolute;
+    left: 10px;
+}

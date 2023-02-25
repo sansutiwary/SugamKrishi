@@ -1,0 +1,82 @@
+li {
+  list-style-type: none; }
+
+#post {
+  margin-top: 20px; }
+  #post textarea {
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 40vw;
+    height: 20vh;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 0; }
+  #post input[type="submit"] {
+    display: block;
+    margin: 6 auto;
+    background-color: #8abe53;
+    border: 0.8px solid black;
+    border-radius: 2px;
+    padding: 2px 15px; }
+    #post input[type="submit"]:hover {
+      background-color: #418a0f;
+      color: whitesmoke;
+      cursor: pointer; }
+
+#all-tools {
+  display: inline-block;
+  width: 20vw;
+  overflow: hidden;
+  vertical-align: top;
+  margin-right: 4vw;
+  background-color: #96bf6b;
+  border-radius: 4px;
+  height: 40vh; }
+  #all-tools a {
+    text-decoration: none; }
+
+#all-posts-section {
+  display: inline-block;
+  width: 48vw;
+  margin: 0 auto; }
+  #all-posts-section .all-posts {
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 4px white;
+    margin: 4px 0;
+    background-color: #96bf6b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800; }
+    #all-posts-section .all-posts .comment-container form {
+      margin: 0; }
+      #all-posts-section .all-posts .comment-container form input[type=text] {
+        width: 30%; }
+  #all-posts-section .post-comments-list {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    #all-posts-section .post-comments-list h2 {
+      margin: 0;
+      text-align: center; }
+    #all-posts-section .post-comments-list ul {
+      background-color: #d7c8c8;
+      width: 40%; }
+      #all-posts-section .post-comments-list ul li {
+        border-radius: 4px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 300;
+        width: 84%;
+        background-color: whitesmoke;
+        margin: 2px 0; }
+
+#user-friends {
+  display: inline-block;
+  width: 20vw;
+  margin-left: 4vw;
+  vertical-align: top;
+  background-color: #96bf6b;
+  border-radius: 4px; }
+  #user-friends a {
+    text-decoration: none; }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <!--From https://codepen.io/frytyler/pen/EGdtg-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cattle Recommendation</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      h1{
+        color:green;
+      }
+      form {
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 1rem;
+}
+input[type="text"],
+button {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0.1rem 0.15rem;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="login">
+      <h1 style="background-color:#8cf00a;text-align:center;">Cattle Prediction</h1>
+
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}" method="post">
+        <input
+          type="text"
+          name="temperature"
+          placeholder="TEMPERATURE"
+          required="required"
+        />
+        <input
+          type="text"
+          name="cost"
+          placeholder="COST"
+          required="required"
+        />
+        <input
+          type="text"
+          name="area"
+          placeholder="AREA"
+          required="required"
+        />
+        <input
+          type="text"
+          name="rainfall"
+          placeholder="RAINFALL"
+          required="required"
+        />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          Predict
+        </button>
+      </form>
+
+      <br />
+      <br />
+      <h1>{{ prediction_text }}</h1>
+    </div>
+  </body>
+</html>

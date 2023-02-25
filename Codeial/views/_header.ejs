@@ -1,0 +1,15 @@
+<header>
+  <ul>
+    <span id="name"> <a href="/" id="Webname" style="text-decoration: none;"> <img src="/Images/logo.png" alt="logo"></a></span>
+    <li><a href="/">Home</a></li>
+    <% if(locals.user){ %>
+    <li id="username"><a href="/user/profile/<%= user.id %>"><%= user.name %></a></li>
+    <li><a href="/user/signout">SignOut</a></li>
+    <% } else{ %>
+    <li><a href="/user/signup">SignUp/</a><a href="/user/signin">\LogIn</a></li>
+    <% } %>
+    <li id="weather"></li>
+  </ul>
+</header>
+<!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="/JS/user.js"></script> -->

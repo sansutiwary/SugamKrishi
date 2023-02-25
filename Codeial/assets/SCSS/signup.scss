@@ -1,0 +1,31 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+        input{
+        margin: 10px 0;
+        padding: 8px;
+        border-radius: 8px;
+        width: 300px;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            color: whitesmoke;
+        }
+}
+
+button{
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+button:hover{
+    background-color: rgb(59, 203, 95);
+    color: whitesmoke;
+    cursor: pointer;
+}

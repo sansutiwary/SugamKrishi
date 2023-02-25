@@ -1,0 +1,22 @@
+#user {
+  color: whitesmoke; }
+
+form p, h1 {
+  color: whitesmoke; }
+
+form input {
+  width: 20vw; }
+
+#update {
+  width: 8vw;
+  padding: 4px; }
+  #update:hover {
+    background-color: #8abe53;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 0;
+    border-radius: 7px; }
+
+#user a {
+  text-decoration: none;
+  color: whitesmoke; }

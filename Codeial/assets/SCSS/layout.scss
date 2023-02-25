@@ -1,0 +1,40 @@
+html{
+    background: url("https://c1.wallpaperflare.com/preview/544/534/376/background-green-grass-lawn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header,footer{
+    background-color: #8abe53;
+    height: 10vh;
+ul{
+    color: rgb(0, 0, 0);
+}
+}
+
+body{
+    margin: 0;
+    text-align: center;
+    // background-color: #8BBF9F;
+    // #flash{
+    //     margin: 0;
+    //     position: fixed;
+    //     top: 4px;
+    //     right: 50px;
+    //     background-color: rgb(75, 215, 75);
+    //     padding: 2px 3px;
+    //     border-radius: 3px;
+    // }
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+        #current_user{
+        margin: 3px 5px;
+        padding: 4px;
+        background-color: cornflowerblue;
+        }
+        a{
+            margin: 0 20px;
+        }
+}

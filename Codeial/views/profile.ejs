@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/profile.css">
+<% if(user.id == profile_user.id){ %>
+        <!-- if user matches loggedIn user then show Update form -->
+        <h1>Update Details</h1>
+        <form action="/user/update/<%= profile_user.id %>" method="post">
+            <label for="editname">
+                <p>Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="editname" name="name" placeholder="Enter new Name*" value="<%= profile_user.name %>" required></p>
+            </label>
+            <label for="editUname">
+                <p>Username:<input type="text" id="editUname" name="username" placeholder="Enter new UserName*" value="<%= profile_user.username %>" required></p>
+            </label>
+            <!-- <input type="file" name="avatar" id="avatar" placeholder="Profile picture"> <br> -->
+            <input type="submit" value="Update" id="update">
+        </form>
+
+<%}else{%>
+        <!-- else show only profile page -->
+        <h1>Details Of <%= profile_user.name %></h1>
+        <div id="user">
+            <h2> Name: <%= profile_user.name %> </h1>
+            <!-- <h2> username: <%= profile_user.username %> </h2> -->
+            <h3> created at: <%= profile_user.createdAt %> </h3>
+            <a href="/user/signout">SignOut</a>
+        </div>
+<%}%>
