@@ -40,4 +40,9 @@ Notifications were sent to users for different actions through the use of Noty.
 
 ## To watch the presentation of the site visit : https://drive.google.com/file/d/1sEzyaqOFgeiFdAnqI80nQhdhW0Fa3wuV/view?usp=sharing
 
+#or
+
+https://user-images.githubusercontent.com/86849540/221390963-5b2f57a1-32f5-44c7-8bea-af63d943b684.mp4
+
+
 
