@@ -26,17 +26,17 @@ By utilizing the Ejs engine, we were able to present the file to the user in the
 Passport.Js:-
 We utilized this package to grant authorization and authentication to the user, allowing them to perform any action with the help of the Passport local strategy.
 Scss:-
-In designing our frontend, we employed SCSS and its remarkable syntax to boost our coding productivity.
+In our frontend design, we harnessed the power of SCSS and its impressive syntax to enhance our coding efficiency.
 APIs:- 
-We utilized APIs to obtain JSON data from a hosted open source API by making API requests.
+For data retrieval, we made use of APIs to fetch JSON data from a hosted open-source API by sending API requests
 Express :-
-Our application was hosted using an Express app, which listened on a designated port.
+To host our application, we employed an Express app, which listened on a specific port.
 MongoDB:-
-Data was stored in a NoSQL format using MongoDB.
+For data storage, we opted for MongoDB in a NoSQL format.
 Mongoose:-
-Mongoose was utilized as a framework to access and sort through data stored in MongoDB.
+To access and manage the data stored in MongoDB, we leveraged the Mongoose framework.
 Noty:-
-Notifications were sent to users for different actions through the use of Noty.
+To keep users informed about various actions, we incorporated Noty for sending notifications.
 
 ## To watch the presentation of the site visit : https://drive.google.com/file/d/1sEzyaqOFgeiFdAnqI80nQhdhW0Fa3wuV/view?usp=sharing
 
